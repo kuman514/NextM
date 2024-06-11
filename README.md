@@ -76,3 +76,63 @@
   - 404 Not Found (찾고자 하는 데이터가 없는 경우) (`404ErrorIndicator`)
   - 429 Too Many Requests (금일 사용한 API 사용 횟수가 소진되었을 경우) (`429ErrorIndicator`)
   - 그 외 에러가 있을 경우 (`OtherErrorIndicator`)
+
+## 이 프로젝트에서는 FSD를 시도함
+- FSD(Feature-Sliced Design)란?
+  - 프론트엔드 전용 아키텍처 중 하나. 모듈 간의 느슨한 결합과 높은 응집력을 제공하고 쉽게 확장할 수 있는 구조를 의도했다고 한다. 즉, 코드베이스를 조직화하고, 모듈화되고 유지보수에도 용이한, 확장성 높은 아키텍처를 촉진시키도록 설계했다고 볼 수 있다.
+  - FSD는 레이어(Layer), 슬라이스(Slice), 세그먼트(Segment)의 세 가지 단계로 나뉜다고 한다.
+    - 레이어(Layer)
+      - 설명: 앱 구조 분해의 첫번째 단계이자, app > processes > pages > widgets > features > entities > shared 순의 계급으로 엄격한 상하관계를 가진 단계. (각 모듈은 자기 자신보다 낮은 계급에 있는 모듈만 사용 가능하다는 의미)
+      - 앱(app)
+        - 애플리케이션 로직이 시작되는 모듈.
+        - 프로바이더, 라우터, 전역 스타일, 전역 타입 선언 등이 여기에서 정의된다.
+        - 엔트리 포인트 역할을 한다.
+      - 프로세스(processes)
+        - 여러 페이지에 걸친 시나리오를 처리하는 모듈.
+        - Depricated 되었고, 선택적(optional)임.
+      - 페이지(pages)
+        - 여러 위젯, 피쳐, 엔티티가 유기적으로 모여 하나의 화면을 이루는 모듈.
+      - 위젯(widgets)
+        - 여러 피쳐와 엔티티가 유기적으로 모여 하나의 의미를 가지게 되는 모듈.
+        - 예: 이슈 리스트, 유저 프로필 등등
+      - 피쳐(features)
+        - 비즈니스 관점에서 유효한 유저 상호작용이나 조치로 이루어진 모듈.
+        - 예: 댓글 달기, 상품 장바구니에 담기, 유저 검색하기 등등
+        - 선택적(optional)임.
+      - 엔티티(entities)
+        - 비즈니스적인 의미를 가지는 모듈.
+        - 예: 유저, 상품, 주문, 댓글 등등
+        - 선택적(optional)임.
+      - 공동(shared)
+        - 어떤 비즈니스 로직에도 종속되지 않는 계급.
+        - 예: UI, 라이브러리, API 등등.
+        - 재사용성이 높다.
+    - 슬라이스(Slice)
+      - 레이어 단계가 비즈니스 도메인으로 더 세분화되는 단계.
+      - 슬라이스는 동일 레이어 계급의 타 슬라이스를 사용할 수 없다.
+    - 세그먼트(Segment)
+      - 슬라이스 단계가 기술적인 도메인으로 더 세분화되는 단계.
+      - UI, 모델(스토어나 액션), API, 라이브러리 등이 대표적인 세그먼트이다.
+  - (근거 1: https://feature-sliced.design/docs/get-started/overview)
+  - (근거 2: https://emewjin.github.io/feature-sliced-design/)
+- 왜 이걸 시도하는가?
+  - 기존에 사용하던 [Atomic Design Pattern](https://feature-sliced.design/docs/about/alternatives#applicability-to-frontend)은 UI 컴포넌트와 그 조합에 초점이 맞추어져 있어, 컴포넌트가 비즈니스 측면에서 어떤 역할을 하는지 알기 어렵다는 단점이 있어, 구조적인 개선이 필요했다.
+  - 그래서 Atomic Design Pattern과 유사하면서도 각 컴포넌트의 비즈니스적인 역할까지 알아볼 수 있는 FSD를 시도해보고자 한다.
+  - (근거: https://feature-sliced.design/docs/about/alternatives#applicability-to-frontend)
+- Next.js App Router에서 어떻게 FSD를 사용할 수 있을까?
+  - 초기에 src/app이 있는 경우, src/app -> app으로 변경한다. src/app은 루트에 app이 있는 경우 무시되기 때문에, FSD를 활용하고 싶으면 src/app 폴더를 루트에 옮긴다.
+  - 이 때, Tailwind CSS를 사용 중이라면, tailwind.config.ts의 content section을 재설정해야 한다.
+    ```TypeScript
+    const config: Config = {
+      content: [
+        './pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './app/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/**/*.{js,ts,jsx,tsx,mdx}',
+      ],
+      ...,
+    };
+    ```
+    (참고: https://tailwindcss.com/docs/content-configuration)
+  - 그 외에도, TypeScript의 path aliasing 등등에 설정해줄 필요가 있으면 해둔다.
+  - (근거 1: https://feature-sliced.design/docs/guides/tech/with-nextjs#app-router)
+  - (근거 2: https://nextjs.org/docs/pages/building-your-application/configuring/src-directory)
