@@ -1,7 +1,7 @@
 # NextM
 - 마블 API를 이용하여 Next.js 14를 조금 더 효과적으로 학습하기 위해 만들어진 프로젝트.
 
-## 태스크 브레이크다운 (거시적으로 완료. 세부적으로 진행 예정.)
+## 태스크 브레이크다운
 - 환경 설정
   - 환경변수 세팅
 - 각종 타입 정의하기
@@ -12,32 +12,63 @@
   - 참고: API 목록 문서 (https://developer.marvel.com/docs)
 - 페이지 만들기
   - 캐릭터 페이지
-    - 캐릭터 검색
-    - 캐릭터 상세
+    - 캐릭터 검색 (`/characters`)
+    - 캐릭터 상세 (`/characters/{characterId}`)
       - 캐릭터 등장 코믹스
       - 캐릭터 등장 시리즈
       - 캐릭터 등장 스토리
   - 코믹스 페이지
-    - 코믹스 검색
-    - 코믹스 상세
+    - 코믹스 검색 (`/comics`)
+    - 코믹스 상세 (`/comics/{comicId}`)
       - 코믹스 내 캐릭터
       - 코믹스 스토리
   - 시리즈 페이지
-    - 시리즈 검색
-    - 시리즈 상세
+    - 시리즈 검색 (`/series`)
+    - 시리즈 상세 (`/series/{seriesId}`)
       - 시리즈 등장 캐릭터
       - 시리즈 내 코믹스
       - 시리즈 내 스토리
   - 스토리 페이지
-    - 스토리 목록 (필터링 가능한 리스트)
-    - 스토리 상세
+    - 스토리 목록 (필터링 가능한 리스트) (`/stories`)
+    - 스토리 상세 (`/stories/${storyId}`)
       - 스토리 해당 캐릭터
       - 스토리 해당 코믹스
       - 스토리 해당 시리즈
 - 페이지에 필요한 컴포넌트 만들기
-  - NextM 로고
+  - NextM 로고 (`NextMLogo`)
   - 인풋
+    - 검색 인풋 (`SearchInput`)
+    - 단일 라디오 모음 (`RadioSelection`)
+    - 다중 체크박스 모음 (`CheckSelection`)
+    - 콤보박스 (`ComboSelection`)
+    - 버튼 (`Button`)
   - 텍스트
+    - 타이틀 (`Title`)
+    - 부제목 (`SubTitle`)
+    - 문단 (`Paragraph`)
+    - 최근 수정된 시각 (`LastModified`)
   - 이미지
-  - 템플릿
+    - 썸네일 이미지 (`ThumbnailImage`)
+    - 풀 사이즈 이미지 (`FullSizeImage`)
+  - 컨텐츠 템플릿
+    - 요약 (`Summary`)
+      - 캐릭터 요약 (`CharacterSummary`)
+      - 코믹스 요약 (`ComicsSummary`)
+      - 시리즈 요약 (`SeriesSummary`)
+      - 스토리 요약 (`StorySummary`)
+    - 아티클 (`Article`)
+      - 캐릭터 아티클 (`CharacterArticle`)
+      - 코믹스 아티클 (`ComicsArticle`)
+      - 시리즈 아티클 (`SeriesArticle`)
+      - 스토리 아티클 (`StoryArticle`)
+  - 리스트
+    - 캐릭터 리스트 (`CharacterList`)
+    - 코믹스 리스트 (`ComicsList`)
+    - 시리즈 리스트 (`SeriesList`)
+    - 스토리 리스트 (`StoryList`)
   - 레이아웃
+    - 헤더 (`Header`)
+      - 캐릭터, 코믹스, 시리즈, 스토리 중 원하는 곳으로 이동할 수 있게 해주는 네비게이션 (`Navigation`)
+    - 본문 영역 (`Body`)
+    - 푸터 (`Footer`)
+      - 반드시 `Data provided by Marvel. © 2014 Marvel`이 보이도록 해야 함 (근거: https://developer.marvel.com/documentation/attribution)
