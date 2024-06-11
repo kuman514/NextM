@@ -72,3 +72,7 @@
     - 본문 영역 (`Body`)
     - 푸터 (`Footer`)
       - 반드시 `Data provided by Marvel. © 2014 Marvel`이 보이도록 해야 함 (근거: https://developer.marvel.com/documentation/attribution)
+- 오류 시 안내 만들기
+  - 404 Not Found (찾고자 하는 데이터가 없는 경우) (`404ErrorIndicator`)
+  - 429 Too Many Requests (금일 사용한 API 사용 횟수가 소진되었을 경우) (`429ErrorIndicator`)
+  - 그 외 에러가 있을 경우 (`OtherErrorIndicator`)
