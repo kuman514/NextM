@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
 import './globals.css';
+
+import Footer from '^/shared/footer';
+import { COPYRIGHT } from '^/shared/footer/text';
+import Header from '^/shared/header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} flex min-h-screen flex-col items-center justify-between`}
+      >
+        <Header>
+          <span>NextM</span>
+          <span>NextM</span>
+          <span>NextM</span>
+        </Header>
+        {children}
+        <Footer>{COPYRIGHT}</Footer>
+      </body>
     </html>
   );
 }
