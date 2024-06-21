@@ -14,4 +14,15 @@ Next.js 14에 대해 몰랐거나 잘못 알고 있는 사항을 보완하기 �
   - 부분 렌더링 (Partial Rendering)
 - 근거
   - https://nextjs.org/blog/next-14
+  - https://nextjs.org/blog/next-14-1
+  - https://nextjs.org/blog/next-14-2
   - https://yozm.wishket.com/magazine/detail/2324/
+
+## 서버 컴포넌트와 클라이언트 컴포넌트 (추가적인 메모 예정)
+- 서버 컴포넌트 (추가적인 메모 예정)
+- 클라이언트 컴포넌트 (추가적인 메모 예정)
+- 서버 컴포넌트와 클라이언트 컴포넌트의 차이 (추가적인 메모 예정)
+- 근거
+  - https://nextjs.org/docs/app/building-your-application/rendering/server-components
+  - https://nextjs.org/docs/app/building-your-application/rendering/client-components
+  - https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns
