@@ -8,7 +8,7 @@ interface Props {
 export default function Footer({ children, customClassName }: Props) {
   return (
     <footer
-      className={`flex w-full text-base font-normal bg-red-700 items-center justify-center p-12 ${customClassName}`}
+      className={`flex w-full text-base font-normal bg-red-700 items-center justify-center p-12 text-white ${customClassName}`}
     >
       {children}
     </footer>
