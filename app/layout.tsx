@@ -6,6 +6,7 @@ import './globals.css';
 import Footer from '^/shared/footer';
 import { COPYRIGHT } from '^/shared/footer/text';
 import Header from '^/shared/header';
+import TextInput from '^/shared/text-input';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
       >
         <Header>
           <span>NextM</span>
-          <span>NextM</span>
+          <TextInput />
           <span>NextM</span>
         </Header>
         {children}
