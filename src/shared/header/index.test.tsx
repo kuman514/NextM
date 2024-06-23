@@ -16,4 +16,9 @@ describe('Header', () => {
     expect(await screen.findByText(/Iron MAN/i)).toBeInTheDocument();
     expect(await screen.findByText(/Hulk/i)).toBeInTheDocument();
   });
+
+  it('should be header as an HTML element', () => {
+    const { container } = render(<Header />);
+    expect(container.firstChild?.nodeName).toStrictEqual('HEADER');
+  });
 });
