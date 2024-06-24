@@ -6,8 +6,7 @@ import './globals.css';
 import Footer from '^/shared/footer';
 import { COPYRIGHT } from '^/shared/footer/text';
 import Header from '^/shared/header';
-import TextInput from '^/shared/text-input';
-import Button from '^/shared/button';
+import SearchInput from '^/feature/search-input';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,10 +27,7 @@ export default function RootLayout({
       >
         <Header>
           <span>NextM</span>
-          <div className="flex flex-row gap-x-2">
-            <TextInput />
-            <Button>Search</Button>
-          </div>
+          <SearchInput />
           <span>NextM</span>
         </Header>
         {children}
