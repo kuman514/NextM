@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import Button from '.';
 
 describe('Button', () => {
-  it('should be inputtable', async () => {
+  it('should be clickable', async () => {
     const mockFn = jest.fn();
 
     render(
@@ -19,7 +19,7 @@ describe('Button', () => {
     expect(mockFn).toHaveBeenCalled();
   });
 
-  it('should not be inputtable on disabled', async () => {
+  it('should not be clickable on disabled', async () => {
     const mockFn = jest.fn();
 
     render(
