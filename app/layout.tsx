@@ -7,6 +7,7 @@ import Footer from '^/shared/footer';
 import { COPYRIGHT } from '^/shared/footer/text';
 import Header from '^/shared/header';
 import TextInput from '^/shared/text-input';
+import Button from '^/shared/button';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,7 +28,10 @@ export default function RootLayout({
       >
         <Header>
           <span>NextM</span>
-          <TextInput />
+          <div className="flex flex-row gap-x-2">
+            <TextInput />
+            <Button>Search</Button>
+          </div>
           <span>NextM</span>
         </Header>
         {children}
