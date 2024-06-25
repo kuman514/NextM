@@ -3,10 +3,10 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 
+import SearchInput from '^/features/search-input';
 import Footer from '^/shared/footer';
 import { COPYRIGHT } from '^/shared/footer/text';
 import Header from '^/shared/header';
-import SearchInput from '^/feature/search-input';
 
 const inter = Inter({ subsets: ['latin'] });
 
