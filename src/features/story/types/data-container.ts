@@ -1,4 +1,4 @@
-import { Story } from '^/entities/story/types/entity';
+import { Story } from '^/entities/types/full';
 import { DataContainer } from '^/shared/data-container/types';
 
 export type StoryDataContainer = DataContainer<Story>;
