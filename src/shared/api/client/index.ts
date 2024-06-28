@@ -3,6 +3,11 @@ import qs from 'qs';
 
 import { generateMD5HashForMarvelAPI } from '../util';
 
+/**
+ * @todo
+ * Find and apply how to mock an Axios API client that uses baseURL and paramsSerializer.
+ */
+
 export const apiClient = (() => {
   const createdAPIClient = axios.create({
     baseURL: 'https://gateway.marvel.com',
