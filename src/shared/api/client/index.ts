@@ -1,33 +1,19 @@
 import axios from 'axios';
-import qs from 'qs';
 
 import { generateMD5HashForMarvelAPI } from '../util';
 
-/**
- * @todo
- * Find and apply how to mock an Axios API client that uses baseURL and paramsSerializer.
- */
-
-export const apiClient = (() => {
-  const createdAPIClient = axios.create({
-    baseURL: 'https://gateway.marvel.com',
-    paramsSerializer: (params) => {
-      const timestamp = new Date().getTime();
-      return qs.stringify(
-        {
-          ...params,
-          ts: timestamp,
-          apikey: process.env.MARVEL_PUBLIC_KEY,
-          hash: generateMD5HashForMarvelAPI({
-            timestamp,
-            privateKey: String(process.env.MARVEL_PRIVATE_KEY),
-            publicKey: String(process.env.MARVEL_PUBLIC_KEY),
-          }),
-        },
-        { arrayFormat: 'comma' }
-      );
+export async function callEndpoint<ResponseDataType>(endpoint: string) {
+  const timestamp = new Date().getTime();
+  return await axios<ResponseDataType>(endpoint, {
+    baseURL: String(process.env.MARVEL_API_BASE_URL),
+    params: {
+      ts: timestamp,
+      apikey: process.env.MARVEL_PUBLIC_KEY,
+      hash: generateMD5HashForMarvelAPI({
+        timestamp,
+        privateKey: String(process.env.MARVEL_PRIVATE_KEY),
+        publicKey: String(process.env.MARVEL_PUBLIC_KEY),
+      }),
     },
   });
-
-  return createdAPIClient;
-})();
+}
