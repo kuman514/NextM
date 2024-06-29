@@ -5,17 +5,13 @@
 
 import { md5 } from 'js-md5';
 
-interface Params {
-  timestamp: number;
-  privateKey: string;
-  publicKey: string;
-}
+import { ConfigParams } from '../types';
 
 export function generateMD5HashForMarvelAPI({
   timestamp,
   privateKey,
   publicKey,
-}: Params) {
+}: ConfigParams) {
   const original = `${timestamp}${privateKey}${publicKey}`;
   return md5(original);
 }
