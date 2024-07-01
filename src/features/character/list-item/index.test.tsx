@@ -85,7 +85,7 @@ describe('CharacterListItem', () => {
       />
     );
 
-    const link = await screen.findByLabelText('character-list-item-link');
+    const link = await screen.findByLabelText('list-item-link');
     expect((link as HTMLAnchorElement).href).toStrictEqual(
       'http://localhost/character/1234'
     );
