@@ -16,8 +16,8 @@ describe('SearchInput', () => {
   it('shuold send to search page when search-name is inputted', async () => {
     render(<SearchInput />);
 
-    const textInnput = screen.getByLabelText('search-name-text-input');
-    fireEvent.change(textInnput, {
+    const textInput = screen.getByLabelText('search-name-text-input');
+    fireEvent.change(textInput, {
       target: { value: 'iron man' },
     });
 
@@ -30,8 +30,8 @@ describe('SearchInput', () => {
   it('shuold stay when search-name is nothing inputted but blank spaces', async () => {
     render(<SearchInput />);
 
-    const textInnput = screen.getByLabelText('search-name-text-input');
-    fireEvent.change(textInnput, {
+    const textInput = screen.getByLabelText('search-name-text-input');
+    fireEvent.change(textInput, {
       target: { value: '      ' },
     });
 
