@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryListItem should not render image if it does not have thumbnail 1`] = `
+<li>
+  <a
+    aria-label="list-item-link"
+    class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    href="/story/1234567"
+  >
+    <div
+      class="flex flex-col justify-center items-center w-full h-36"
+    >
+      <span
+        class="text-white text-center"
+      >
+        Koishi Komeiji
+      </span>
+      <span
+        class="text-white text-center"
+      />
+    </div>
+  </a>
+</li>
+`;
+
+exports[`StoryListItem should render as expected (current: thumbnail, title, description) 1`] = `
+<li>
+  <a
+    aria-label="list-item-link"
+    class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    href="/story/1234567"
+  >
+    <div
+      class="w-48 h-48"
+    >
+      <img
+        alt="Koishi Komeiji"
+        class="w-full h-full object-cover"
+        data-nimg="1"
+        decoding="async"
+        height="192"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="192"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-center items-center w-full h-36"
+    >
+      <span
+        class="text-white text-center"
+      >
+        Koishi Komeiji
+      </span>
+      <span
+        class="text-white text-center"
+      />
+    </div>
+  </a>
+</li>
+`;
