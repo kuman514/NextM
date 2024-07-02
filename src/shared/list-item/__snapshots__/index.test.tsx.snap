@@ -27,12 +27,12 @@ exports[`ListItem should render as expected (current: thumbnail, name, descripti
       class="flex flex-col justify-center items-center w-full h-36"
     >
       <span
-        class="text-white"
+        class="text-white text-center"
       >
         Iron Man
       </span>
       <span
-        class="text-white"
+        class="text-white text-center"
       >
         I am Iron Man, not Captain America.
       </span>

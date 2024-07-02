@@ -34,8 +34,8 @@ export default function ListItem({
           />
         </div>
         <div className="flex flex-col justify-center items-center w-full h-36">
-          <span className="text-white">{name}</span>
-          <span className="text-white">{description}</span>
+          <span className="text-white text-center">{name}</span>
+          <span className="text-white text-center">{description}</span>
         </div>
       </Link>
     </li>

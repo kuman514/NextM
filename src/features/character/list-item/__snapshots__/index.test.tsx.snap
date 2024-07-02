@@ -27,12 +27,12 @@ exports[`CharacterListItem should render as expected (current: thumbnail, name, 
       class="flex flex-col justify-center items-center w-full h-36"
     >
       <span
-        class="text-white"
+        class="text-white text-center"
       >
         Koishi Komeiji
       </span>
       <span
-        class="text-white"
+        class="text-white text-center"
       />
     </div>
   </a>
