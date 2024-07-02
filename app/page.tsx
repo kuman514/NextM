@@ -1,14 +1,14 @@
-import { getComics } from '^/features/comic/api/get';
-import ComicListItem from '^/features/comic/list-item';
+import { getSeries } from '^/features/series/api/get';
+import SeriesListItem from '^/features/series/list-item';
 import Paragraph from '^/shared/paragraph';
 import Title from '^/shared/title';
 
 export default async function Home() {
-  const response = await getComics();
+  const response = await getSeries();
   return (
     <main className="flex h-full flex-col items-center justify-center p-24">
       <ul>
-        <ComicListItem comicData={response.data.data.results[2]} />
+        <SeriesListItem seriesData={response.data.data.results[4]} />
       </ul>
       <Title>Lorem Ipsum</Title>
       <Paragraph customClassName="first-letter:font-bold first-letter:text-2xl first-letter:text-red-500">

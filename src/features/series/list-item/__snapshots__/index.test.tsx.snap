@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeriesListItem should render thumbnail, title, and just year if startYear==endYear 1`] = `
+<li>
+  <a
+    aria-label="list-item-link"
+    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    href="/series/1234567"
+  >
+    <div
+      class="w-48 h-48"
+    >
+      <img
+        alt="Koishi Komeiji"
+        class="w-full h-full object-cover"
+        data-nimg="1"
+        decoding="async"
+        height="192"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="192"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-center items-center w-full h-36"
+    >
+      <span
+        class="text-white text-center"
+      >
+        Koishi Komeiji
+      </span>
+      <span
+        class="text-white text-center"
+      >
+        2013
+      </span>
+    </div>
+  </a>
+</li>
+`;
+
+exports[`SeriesListItem should render thumbnail, title, and startYear if endYear==2099 1`] = `
+<li>
+  <a
+    aria-label="list-item-link"
+    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    href="/series/1234567"
+  >
+    <div
+      class="w-48 h-48"
+    >
+      <img
+        alt="Koishi Komeiji"
+        class="w-full h-full object-cover"
+        data-nimg="1"
+        decoding="async"
+        height="192"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="192"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-center items-center w-full h-36"
+    >
+      <span
+        class="text-white text-center"
+      >
+        Koishi Komeiji
+      </span>
+      <span
+        class="text-white text-center"
+      >
+        2008 ~
+      </span>
+    </div>
+  </a>
+</li>
+`;
+
+exports[`SeriesListItem should render thumbnail, title, and startYear to endYear 1`] = `
+<li>
+  <a
+    aria-label="list-item-link"
+    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    href="/series/1234567"
+  >
+    <div
+      class="w-48 h-48"
+    >
+      <img
+        alt="Koishi Komeiji"
+        class="w-full h-full object-cover"
+        data-nimg="1"
+        decoding="async"
+        height="192"
+        loading="lazy"
+        src="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75"
+        srcset="/_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=256&q=75 1x, /_next/image?url=http%3A%2F%2Fi.annihil.us%2Fu%2Fprod%2Fmarvel%2Fi%2Fmg%2Fc%2Fe0%2F535fecbbb9784.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="192"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-center items-center w-full h-36"
+    >
+      <span
+        class="text-white text-center"
+      >
+        Koishi Komeiji
+      </span>
+      <span
+        class="text-white text-center"
+      >
+        2008 ~ 2012
+      </span>
+    </div>
+  </a>
+</li>
+`;
