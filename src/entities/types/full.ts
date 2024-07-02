@@ -361,7 +361,7 @@ export interface Story {
    * @desc
    * The representative image for this story.
    */
-  thumbnail: ImagePath;
+  thumbnail: ImagePath | null;
 
   /**
    * @desc
