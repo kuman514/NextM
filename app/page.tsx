@@ -1,57 +1,14 @@
-import CharacterListItem from '^/features/character/list-item';
+import { getComics } from '^/features/comic/api/get';
+import ComicListItem from '^/features/comic/list-item';
 import Paragraph from '^/shared/paragraph';
 import Title from '^/shared/title';
 
 export default async function Home() {
+  const response = await getComics();
   return (
     <main className="flex h-full flex-col items-center justify-center p-24">
       <ul>
-        <CharacterListItem
-          characterData={{
-            id: 1234567,
-            name: 'Koishi Komeiji',
-            description: '',
-            modified: new Date(),
-            thumbnail: {
-              path: 'https://pbs.twimg.com/profile_images/1175746616545857538/JuT5t8dm',
-              extension: 'jpg',
-            },
-            resourceURI:
-              'http://gateway.marvel.com/v1/public/characters/1011334',
-            comics: {
-              available: 0,
-              collectionURI: '',
-              items: [],
-              returned: 0,
-            },
-            series: {
-              available: 0,
-              collectionURI: '',
-              items: [],
-              returned: 0,
-            },
-            stories: {
-              available: 0,
-              collectionURI: '',
-              items: [],
-              returned: 0,
-            },
-            urls: [
-              {
-                type: 'detail',
-                url: 'http://marvel.com/characters/74/3-d_man?utm_campaign=apiRef&utm_source=210f167ce9ef4ac5a0a576bec067bcc1',
-              },
-              {
-                type: 'wiki',
-                url: 'http://marvel.com/universe/3-D_Man_(Chandler)?utm_campaign=apiRef&utm_source=210f167ce9ef4ac5a0a576bec067bcc1',
-              },
-              {
-                type: 'comiclink',
-                url: 'http://marvel.com/comics/characters/1011334/3-d_man?utm_campaign=apiRef&utm_source=210f167ce9ef4ac5a0a576bec067bcc1',
-              },
-            ],
-          }}
-        />
+        <ComicListItem comicData={response.data.data.results[2]} />
       </ul>
       <Title>Lorem Ipsum</Title>
       <Paragraph customClassName="first-letter:font-bold first-letter:text-2xl first-letter:text-red-500">
