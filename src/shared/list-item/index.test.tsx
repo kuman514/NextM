@@ -24,6 +24,19 @@ describe('ListItem', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it('should not render image if it does not have thumbnail', () => {
+    const { container } = render(
+      <ListItem
+        name="Iron Man"
+        description="I am Iron Man, not Captain America."
+        href="/character/1234"
+        imageAlt="Iron Man"
+        imageSrc={null}
+      />
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it('should has href=/character/1234 when the characterData is having id=1234', async () => {
     render(
       <ListItem

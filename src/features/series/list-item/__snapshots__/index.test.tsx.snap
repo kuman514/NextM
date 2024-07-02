@@ -4,7 +4,7 @@ exports[`SeriesListItem should render thumbnail, title, and just year if startYe
 <li>
   <a
     aria-label="list-item-link"
-    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
     href="/series/1234567"
   >
     <div
@@ -45,7 +45,7 @@ exports[`SeriesListItem should render thumbnail, title, and startYear if endYear
 <li>
   <a
     aria-label="list-item-link"
-    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
     href="/series/1234567"
   >
     <div
@@ -86,7 +86,7 @@ exports[`SeriesListItem should render thumbnail, title, and startYear to endYear
 <li>
   <a
     aria-label="list-item-link"
-    class="flex flex-col w-48 h-72 rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+    class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
     href="/series/1234567"
   >
     <div
