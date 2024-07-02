@@ -1,14 +1,15 @@
-import { getSeries } from '^/features/series/api/get';
-import SeriesListItem from '^/features/series/list-item';
+import { getStories } from '^/features/story/api/get';
+import StoryListItem from '^/features/story/list-item';
 import Paragraph from '^/shared/paragraph';
 import Title from '^/shared/title';
 
 export default async function Home() {
-  const response = await getSeries();
+  const response1 = await getStories();
+
   return (
     <main className="flex h-full flex-col items-center justify-center p-24">
       <ul>
-        <SeriesListItem seriesData={response.data.data.results[4]} />
+        <StoryListItem storyData={response1.data.data.results[0]} />
       </ul>
       <Title>Lorem Ipsum</Title>
       <Paragraph customClassName="first-letter:font-bold first-letter:text-2xl first-letter:text-red-500">
