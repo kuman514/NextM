@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList should render as expected 1`] = `
+<div
+  class="w-full flex flex-col items-start"
+>
+  <h1
+    class="mt-9 mb-6 text-4xl font-bold undefined"
+  >
+    Avengers
+  </h1>
+  <ul
+    class="w-full flex flex-row overflow-x-auto gap-4"
+  >
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/1"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Iron Man"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Firon_man.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Firon_man.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Firon_man.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Iron Man
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/2"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Captain America"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fcaptain_america.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fcaptain_america.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fcaptain_america.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Captain America
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/3"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Hulk"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhulk.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhulk.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhulk.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Hulk
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/4"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Thor"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fthor.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fthor.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fthor.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Thor
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/5"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Black Widow"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fblack_widow.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fblack_widow.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fblack_widow.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Black Widow
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/character/6"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Hawk Eye"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhawk_eye.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhawk_eye.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fhawk_eye.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Hawk Eye
+          </span>
+          <span
+            class="text-white text-center"
+          />
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
