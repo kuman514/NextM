@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicList should render as expected 1`] = `
+<div
+  class="w-full flex flex-col items-start"
+>
+  <h1
+    class="mt-9 mb-6 text-4xl font-bold undefined"
+  >
+    Avengers
+  </h1>
+  <ul
+    class="w-full flex flex-row overflow-x-auto gap-4"
+  >
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/comic/1"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Avengers"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Avengers
+          </span>
+          <span
+            class="text-white text-center"
+          >
+            Avengers assemble
+          </span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/comic/2"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Dr. Strange"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fdr_strange.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fdr_strange.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Fdr_strange.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Dr. Strange
+          </span>
+          <span
+            class="text-white text-center"
+          >
+            Dormammu, I've come to bargain!
+          </span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="list-item-link"
+        class="flex flex-col w-48 h-72 justify-center rounded-xl overflow-hidden bg-black hover:bg-red-700 transition"
+        href="/comic/3"
+      >
+        <div
+          class="w-48 h-48"
+        >
+          <img
+            alt="Avergers: Endgame"
+            class="w-full h-full object-cover"
+            data-nimg="1"
+            decoding="async"
+            height="192"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers_endgame.jpg&w=384&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers_endgame.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favenge.rs%2Fimages%2Favengers_endgame.jpg&w=384&q=75 2x"
+            style="color: transparent;"
+            width="192"
+          />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center w-full h-36"
+        >
+          <span
+            class="text-white text-center"
+          >
+            Avergers: Endgame
+          </span>
+          <span
+            class="text-white text-center"
+          >
+            We're in the endgame now.
+          </span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
