@@ -13,10 +13,7 @@ export default function ComicList({ label, comicDataList }: Props) {
       <Title>{label}</Title>
       <ul className="w-full flex flex-row overflow-x-auto gap-4">
         {comicDataList.map((comicData) => (
-          <ComicListItem
-            key={`character-${comicData.id}`}
-            comicData={comicData}
-          />
+          <ComicListItem key={`comic-${comicData.id}`} comicData={comicData} />
         ))}
       </ul>
     </div>
