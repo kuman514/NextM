@@ -1,12 +1,12 @@
-import { getSeries } from '^/features/series/api/get';
-import SeriesList from '^/widgets/series/list';
+import { getStories } from '^/features/story/api/get';
+import StoryList from '^/widgets/story/list';
 
 export default async function Home() {
-  const response = await getSeries();
+  const response = await getStories();
 
   return (
     <main className="flex w-full h-full flex-col items-center justify-center p-24">
-      <SeriesList label="Series" seriesDataList={response.data.data.results} />
+      <StoryList label="Stories" storyDataList={response.data.data.results} />
     </main>
   );
 }
