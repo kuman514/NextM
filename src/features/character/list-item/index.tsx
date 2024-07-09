@@ -9,7 +9,7 @@ export default function CharacterListItem({ characterData }: Props) {
   return (
     <ListItem
       name={characterData.name}
-      description={characterData.description}
+      description=""
       href={`/character/${characterData.id}`}
       imageSrc={`${characterData.thumbnail.path}.${characterData.thumbnail.extension}`}
       imageAlt={characterData.name}

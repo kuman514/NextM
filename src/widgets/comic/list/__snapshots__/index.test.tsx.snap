@@ -44,9 +44,7 @@ exports[`ComicList should render as expected 1`] = `
           </span>
           <span
             class="text-white text-center"
-          >
-            Avengers assemble
-          </span>
+          />
         </div>
       </a>
     </li>
@@ -82,9 +80,7 @@ exports[`ComicList should render as expected 1`] = `
           </span>
           <span
             class="text-white text-center"
-          >
-            Dormammu, I've come to bargain!
-          </span>
+          />
         </div>
       </a>
     </li>
@@ -120,9 +116,7 @@ exports[`ComicList should render as expected 1`] = `
           </span>
           <span
             class="text-white text-center"
-          >
-            We're in the endgame now.
-          </span>
+          />
         </div>
       </a>
     </li>

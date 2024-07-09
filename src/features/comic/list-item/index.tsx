@@ -9,7 +9,7 @@ export default function ComicListItem({ comicData }: Props) {
   return (
     <ListItem
       name={comicData.title}
-      description={comicData.description}
+      description=""
       href={`/comic/${comicData.id}`}
       imageSrc={`${comicData.thumbnail.path}.${comicData.thumbnail.extension}`}
       imageAlt={comicData.title}
